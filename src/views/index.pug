@@ -1,0 +1,12 @@
+doctype html
+html(lang='en')
+    h1 How much are my ETF's overlapping
+    h3 (First cut betashares only)
+    body
+        form(action='/api/betashares' method='POST')
+            | First ETF: 
+            input(type='text' name='etf1' value)
+            | Second ETF: 
+            input(type='text' name='etf2' value)
+            input(type='submit' value='Submit')
+        
